@@ -1,4 +1,5 @@
 import { Button, Paper } from '@mui/material';
+import module_styles from '../components.module.css';
 
 interface IconContainerProps {
   color: string;
@@ -29,6 +30,7 @@ export function IconContainer({ color, icon }: IconContainerProps) {
         >
           <Paper
             elevation={4}
+            className={module_styles.circle_button_shadow}
             style={{
               borderRadius: '20rem',
               width: '7.5rem',
@@ -36,6 +38,7 @@ export function IconContainer({ color, icon }: IconContainerProps) {
               justifyContent: 'center',
               display: 'flex',
               alignItems: 'center',
+              backgroundColor: '#C4C4C4',
             }}
           >
             {icon}

@@ -1,4 +1,6 @@
 import { Paper, Grid, Typography, Box } from '@mui/material';
+import entity_module_styles from '../../entities/entities.module.css';
+import { DARK_BLUE, LIGHT_BLUE, PINK, PURPLE, RED } from '../../constants';
 
 interface InfoCardProps {
   color: string;
@@ -6,16 +8,30 @@ interface InfoCardProps {
 }
 
 export function InfoCard({ color, infoCardNumber }: InfoCardProps) {
+  let entity_module_className;
+  if (color === RED)
+    entity_module_className = entity_module_styles.red_entity_wave;
+  else if (color === PINK)
+    entity_module_className = entity_module_styles.pink_entity_wave;
+  else if (color === PURPLE)
+    entity_module_className = entity_module_styles.purple_entity_wave;
+  else if (color === DARK_BLUE)
+    entity_module_className = entity_module_styles.dark_blue_entity_wave;
+  else if (color === LIGHT_BLUE)
+    entity_module_className = entity_module_styles.light_blue_entity_wave;
+
   return (
     <>
       <Paper
         elevation={4}
+        className={entity_module_className}
         style={{
           maxWidth: '14.95rem',
           borderTopLeftRadius: '6.5rem',
           borderBottomLeftRadius: '6.5rem',
           backgroundColor: color,
           paddingRight: 0,
+          boxShadow: '20px 20px 40px -1px rgba(0, 0, 0, 0.7)',
         }}
       >
         <Grid container>
@@ -29,6 +45,7 @@ export function InfoCard({ color, infoCardNumber }: InfoCardProps) {
                 justifyContent: 'center',
                 display: 'flex',
                 alignItems: 'center',
+                boxShadow: '5px 5px 25px -1px rgba(0, 0, 0, 0.7)',
               }}
             >
               <Typography
@@ -45,7 +62,6 @@ export function InfoCard({ color, infoCardNumber }: InfoCardProps) {
               display: 'flex',
               justifyContent: 'center',
               alignContent: 'center',
-              backgroundColor: color,
               paddingRight: 0,
             }}
           >

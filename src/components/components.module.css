@@ -1,0 +1,15 @@
+.info_card_shadow {
+  box-shadow: 20px 20px 25px -3px rgba(0, 0, 0, 0.7);
+}
+
+.circle_button_shadow {
+  box-shadow: 5px 5px 25px -3px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to right bottom,
+    #c4c4c4,
+    #d2d2d2,
+    #e1e1e1,
+    #f0f0f0,
+    #ffffff
+  );
+}
