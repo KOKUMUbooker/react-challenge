@@ -1,12 +1,17 @@
 import { Box } from '@mui/material';
 import { InfoCard, DividerLine, IconContainer } from './sub-components';
+import React from 'react';
 
 interface BottomFacingElementProps {
   color: string;
   icon: React.ReactNode;
+  infoCardNumber: string;
+  styles?: React.CSSProperties;
 }
 
-export function BottomFacingElement({ color, icon }: BottomFacingElementProps) {
+export function BottomFacingElement(props: BottomFacingElementProps) {
+  const { color, icon, infoCardNumber, styles } = props;
+
   return (
     <>
       <Box
@@ -15,11 +20,12 @@ export function BottomFacingElement({ color, icon }: BottomFacingElementProps) {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+          ...styles,
         }}
       >
         <IconContainer color={color} icon={icon} />
         <DividerLine color={color} />
-        <InfoCard color={color} />
+        <InfoCard color={color} infoCardNumber={infoCardNumber} />
       </Box>
     </>
   );

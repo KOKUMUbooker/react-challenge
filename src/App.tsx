@@ -30,8 +30,36 @@ function App() {
         alignItems: 'center',
       }}
     >
-      <BottomFacingElement color={RED} icon={bulbIcon} />
-      <TopFacingElement color={PINK} icon={settingsIcon} />
+      <Box
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
+        <Box
+          style={{
+            backgroundColor: RED,
+            width: '16rem',
+            height: '8rem',
+            position: 'absolute',
+            borderRadius: '8rem 8rem 0 0',
+            top: '15%',
+          }}
+        ></Box>
+        <BottomFacingElement
+          color={RED}
+          icon={bulbIcon}
+          infoCardNumber={'01'}
+          styles={{}}
+        />
+      </Box>
+      <TopFacingElement
+        color={PINK}
+        icon={settingsIcon}
+        infoCardNumber={'02'}
+      />
     </Box>
   );
 }

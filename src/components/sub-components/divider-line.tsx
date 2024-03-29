@@ -9,7 +9,7 @@ export function DividerLine({ color }: DividerLineProps) {
     <>
       <Box
         style={{
-          height: '7rem',
+          height: '5rem',
           width: '0.25rem',
           backgroundColor: color,
         }}

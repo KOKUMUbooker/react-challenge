@@ -2,9 +2,10 @@ import { Paper, Grid, Typography, Box } from '@mui/material';
 
 interface InfoCardProps {
   color: string;
+  infoCardNumber: string;
 }
 
-export function InfoCard({ color }: InfoCardProps) {
+export function InfoCard({ color, infoCardNumber }: InfoCardProps) {
   return (
     <>
       <Paper
@@ -33,7 +34,7 @@ export function InfoCard({ color }: InfoCardProps) {
               <Typography
                 style={{ color: color, fontWeight: 900, fontSize: '3rem' }}
               >
-                02
+                {infoCardNumber}
               </Typography>
             </Paper>
           </Grid>
