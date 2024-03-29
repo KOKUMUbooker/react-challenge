@@ -5,10 +5,11 @@ interface TopFacingElementProps {
   color: string;
   icon: React.ReactNode;
   infoCardNumber: string;
+  styles?: React.CSSProperties;
 }
 
 export function TopFacingElement(props: TopFacingElementProps) {
-  const { color, icon, infoCardNumber } = props;
+  const { color, icon, infoCardNumber, styles } = props;
 
   return (
     <>
@@ -18,6 +19,7 @@ export function TopFacingElement(props: TopFacingElementProps) {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+          ...styles,
         }}
       >
         <InfoCard color={color} infoCardNumber={infoCardNumber} />
