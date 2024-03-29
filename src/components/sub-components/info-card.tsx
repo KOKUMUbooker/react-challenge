@@ -11,7 +11,7 @@ export function InfoCard({ color, infoCardNumber }: InfoCardProps) {
       <Paper
         elevation={4}
         style={{
-          maxWidth: '14.85rem',
+          maxWidth: '14.95rem',
           borderTopLeftRadius: '6.5rem',
           borderBottomLeftRadius: '6.5rem',
           backgroundColor: color,
