@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from '@mui/material';
+import { BottomFacingElement, TopFacingElement } from './components';
+import { PINK, RED } from './constants';
+import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
+import LightbulbRoundedIcon from '@mui/icons-material/LightbulbRounded';
+import AdsClickRoundedIcon from '@mui/icons-material/AdsClickRounded';
+import MonetizationOnRoundedIcon from '@mui/icons-material/MonetizationOnRounded';
+import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded';
+import { RedeemRounded } from '@mui/icons-material';
 
 function App() {
+  const settingsIcon = (
+    <SettingsRoundedIcon
+      style={{ color: PINK, fontWeight: 900, fontSize: '5rem' }}
+    />
+  );
+  const bulbIcon = (
+    <LightbulbRoundedIcon
+      style={{ color: RED, fontWeight: 900, fontSize: '5rem' }}
+    />
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box
+      style={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        margin: 0,
+        alignItems: 'center',
+      }}
+    >
+      <BottomFacingElement color={RED} icon={bulbIcon} />
+      <TopFacingElement color={PINK} icon={settingsIcon} />
+    </Box>
   );
 }
 
