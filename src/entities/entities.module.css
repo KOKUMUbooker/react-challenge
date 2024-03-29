@@ -1,0 +1,54 @@
+.red_entity_wave {
+  background-image: linear-gradient(
+    to right bottom,
+    #d7382f,
+    #f11f55,
+    #ff0081,
+    #ff18b5,
+    #fb43ed
+  );
+}
+
+.pink_entity_wave {
+  background-image: linear-gradient(
+    to right,
+    #fd32d6,
+    #e137da,
+    #c33cdc,
+    #a340dc,
+    #7f43da
+  );
+}
+
+.purple_entity_wave {
+  background-image: linear-gradient(
+    to right,
+    #8f43dd,
+    #7659e8,
+    #5a6aee,
+    #3a77f1,
+    #0883f1
+  );
+}
+
+.dark_blue_entity_wave {
+  background-image: linear-gradient(
+    to right,
+    #1d7ff1,
+    #0099f7,
+    #00aef1,
+    #00c0e3,
+    #24cfd4
+  );
+}
+
+.light_blue_entity_wave {
+  background-image: linear-gradient(
+    to right,
+    #15c9da,
+    #18cbd9,
+    #1bccd7,
+    #1fced6,
+    #24cfd4
+  );
+}

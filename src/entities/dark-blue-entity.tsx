@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import MonetizationOnRoundedIcon from '@mui/icons-material/MonetizationOnRounded';
 
+import module_styles from './entities.module.css';
 import { TopFacingElement } from '../components';
 import { DARK_BLUE } from '../constants';
 
@@ -33,6 +34,7 @@ export function DarkBlueEntity({ styles }: DarkBlueEntityProps) {
           styles={{ zIndex: 2 }}
         />
         <Box
+          className={module_styles.dark_blue_entity_wave}
           style={{
             backgroundColor: DARK_BLUE,
             width: '14rem',

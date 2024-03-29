@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import LightbulbRoundedIcon from '@mui/icons-material/LightbulbRounded';
 
+import module_styles from './entities.module.css';
 import { BottomFacingElement } from '../components';
 import { RED } from '../constants';
 
@@ -27,6 +28,7 @@ export function RedEntity({ styles }: RedEntityProps) {
         }}
       >
         <Box
+          className={module_styles.red_entity_wave}
           style={{
             backgroundColor: RED,
             width: '14rem',

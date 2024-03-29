@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import AdsClickRoundedIcon from '@mui/icons-material/AdsClickRounded';
 
+import module_styles from './entities.module.css';
 import { BottomFacingElement } from '../components';
 import { PURPLE } from '../constants';
 
@@ -27,6 +28,7 @@ export function PurpleEntity({ styles }: PurpleEntityProps) {
         }}
       >
         <Box
+          className={module_styles.purple_entity_wave}
           style={{
             backgroundColor: PURPLE,
             width: '14rem',

@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 
 import { TopFacingElement } from '../components';
+import module_styles from './entities.module.css';
 import { PINK } from '../constants';
 
 const settingsIcon = (
@@ -33,6 +34,7 @@ export function PinkEntity({ styles }: PinkEntityProps) {
           styles={{ zIndex: 2 }}
         />
         <Box
+          className={module_styles.pink_entity_wave}
           style={{
             backgroundColor: PINK,
             width: '14rem',

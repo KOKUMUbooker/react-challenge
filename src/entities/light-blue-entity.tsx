@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded';
 
+import module_styles from './entities.module.css';
 import { BottomFacingElement } from '../components';
 import { LIGHT_BLUE } from '../constants';
 
@@ -27,6 +28,7 @@ export function LightBlueEntity({ styles }: LightBlueEntityProps) {
         }}
       >
         <Box
+          className={module_styles.light_blue_entity_wave}
           style={{
             backgroundColor: LIGHT_BLUE,
             width: '14rem',
