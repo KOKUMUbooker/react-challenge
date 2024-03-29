@@ -32,6 +32,16 @@ export function DarkBlueEntity({ styles }: DarkBlueEntityProps) {
           infoCardNumber={'04'}
           styles={{ zIndex: 2 }}
         />
+        <Box
+          style={{
+            backgroundColor: DARK_BLUE,
+            width: '14rem',
+            height: '7rem',
+            translate: '0 -60%',
+            borderRadius: '0 0 8rem 8rem',
+            bottom: '15%',
+          }}
+        ></Box>
       </Box>
     </>
   );

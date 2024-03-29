@@ -19,7 +19,7 @@ export function TopFacingElement(props: TopFacingElementProps) {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          translate: '0 -40%',
+          // translate: '0 -40%',
           ...styles,
         }}
       >

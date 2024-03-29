@@ -20,7 +20,7 @@ export function BottomFacingElement(props: BottomFacingElementProps) {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          translate: '0 15%',
+          // translate: '0 15%',
           ...styles,
         }}
       >

@@ -26,6 +26,16 @@ export function RedEntity({ styles }: RedEntityProps) {
           ...styles,
         }}
       >
+        <Box
+          style={{
+            backgroundColor: RED,
+            width: '14rem',
+            height: '7rem',
+            borderRadius: '8rem 8rem 0 0',
+            translate: '0 60%',
+            top: '15%',
+          }}
+        ></Box>
         <BottomFacingElement
           color={RED}
           icon={bulbIcon}
