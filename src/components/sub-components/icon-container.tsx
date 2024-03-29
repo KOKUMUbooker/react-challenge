@@ -11,8 +11,8 @@ export function IconContainer({ color, icon }: IconContainerProps) {
       <Button
         style={{
           borderRadius: '20rem',
-          width: '9rem',
-          height: '9rem',
+          width: '8.5rem',
+          height: '8.5rem',
           padding: 0,
         }}
       >
@@ -20,8 +20,8 @@ export function IconContainer({ color, icon }: IconContainerProps) {
           elevation={4}
           style={{
             borderRadius: '20rem',
-            width: '9rem',
-            height: '9rem',
+            width: '8.5rem',
+            height: '8.5rem',
             justifyContent: 'center',
             display: 'flex',
             alignItems: 'center',
@@ -31,8 +31,8 @@ export function IconContainer({ color, icon }: IconContainerProps) {
             elevation={4}
             style={{
               borderRadius: '20rem',
-              width: '8.2rem',
-              height: '8.2rem',
+              width: '7.5rem',
+              height: '7.5rem',
               justifyContent: 'center',
               display: 'flex',
               alignItems: 'center',

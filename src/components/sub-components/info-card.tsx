@@ -11,9 +11,9 @@ export function InfoCard({ color, infoCardNumber }: InfoCardProps) {
       <Paper
         elevation={4}
         style={{
-          width: '20rem',
-          borderTopLeftRadius: '3.5rem',
-          borderBottomLeftRadius: '3.5rem',
+          maxWidth: '14.85rem',
+          borderTopLeftRadius: '6.5rem',
+          borderBottomLeftRadius: '6.5rem',
           backgroundColor: color,
           paddingRight: 0,
         }}
@@ -24,8 +24,8 @@ export function InfoCard({ color, infoCardNumber }: InfoCardProps) {
               elevation={4}
               style={{
                 borderRadius: '20rem',
-                width: '6.5rem',
-                height: '6.5rem',
+                width: '5rem',
+                height: '5rem',
                 justifyContent: 'center',
                 display: 'flex',
                 alignItems: 'center',
@@ -59,7 +59,7 @@ export function InfoCard({ color, infoCardNumber }: InfoCardProps) {
               <Typography style={{ fontWeight: 'bolder' }}>
                 YOUR TITLE
               </Typography>
-              <Typography fontSize={'0.7rem'}>
+              <Typography fontSize={'0.55rem'}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Assumenda error molestiae ad quidem
               </Typography>

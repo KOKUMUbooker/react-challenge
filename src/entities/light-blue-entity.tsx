@@ -26,16 +26,6 @@ export function LightBlueEntity({ styles }: LightBlueEntityProps) {
           ...styles,
         }}
       >
-        <Box
-          style={{
-            backgroundColor: LIGHT_BLUE,
-            width: '16rem',
-            height: '8rem',
-            position: 'absolute',
-            borderRadius: '8rem 8rem 0 0',
-            top: '15%',
-          }}
-        ></Box>
         <BottomFacingElement
           color={LIGHT_BLUE}
           icon={bulbIcon}

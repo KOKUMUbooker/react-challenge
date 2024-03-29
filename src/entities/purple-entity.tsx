@@ -26,16 +26,6 @@ export function PurpleEntity({ styles }: PurpleEntityProps) {
           ...styles,
         }}
       >
-        <Box
-          style={{
-            backgroundColor: PURPLE,
-            width: '16rem',
-            height: '8rem',
-            position: 'absolute',
-            borderRadius: '8rem 8rem 0 0',
-            top: '15%',
-          }}
-        ></Box>
         <BottomFacingElement
           color={PURPLE}
           icon={bulbIcon}

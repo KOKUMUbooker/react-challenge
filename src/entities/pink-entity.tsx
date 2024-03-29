@@ -32,16 +32,6 @@ export function PinkEntity({ styles }: PinkEntityProps) {
           infoCardNumber={'02'}
           styles={{ zIndex: 2 }}
         />
-        <Box
-          style={{
-            backgroundColor: PINK,
-            width: '16rem',
-            height: '8rem',
-            position: 'absolute',
-            borderRadius: '0 0 8rem 8rem',
-            bottom: '15%',
-          }}
-        ></Box>
       </Box>
     </>
   );
