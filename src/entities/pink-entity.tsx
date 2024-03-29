@@ -10,7 +10,11 @@ const settingsIcon = (
   />
 );
 
-export function PinkEntity() {
+interface PinkEntityProps {
+  styles?: React.CSSProperties;
+}
+
+export function PinkEntity({ styles }: PinkEntityProps) {
   return (
     <>
       <Box
@@ -19,6 +23,7 @@ export function PinkEntity() {
           justifyContent: 'center',
           flexDirection: 'column',
           alignItems: 'center',
+          ...styles,
         }}
       >
         <TopFacingElement

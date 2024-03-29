@@ -10,7 +10,11 @@ const bulbIcon = (
   />
 );
 
-export function RedEntity() {
+interface RedEntityProps {
+  styles?: React.CSSProperties;
+}
+
+export function RedEntity({ styles }: RedEntityProps) {
   return (
     <>
       <Box
@@ -19,6 +23,7 @@ export function RedEntity() {
           justifyContent: 'center',
           flexDirection: 'column',
           alignItems: 'center',
+          ...styles,
         }}
       >
         <Box

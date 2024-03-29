@@ -10,7 +10,11 @@ const settingsIcon = (
   />
 );
 
-export function DarkBlueEntity() {
+interface DarkBlueEntityProps {
+  styles?: React.CSSProperties;
+}
+
+export function DarkBlueEntity({ styles }: DarkBlueEntityProps) {
   return (
     <>
       <Box
@@ -19,6 +23,7 @@ export function DarkBlueEntity() {
           justifyContent: 'center',
           flexDirection: 'column',
           alignItems: 'center',
+          ...styles,
         }}
       >
         <TopFacingElement

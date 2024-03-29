@@ -1,11 +1,6 @@
 import { Box } from '@mui/material';
-import {
-  DarkBlueEntity,
-  LightBlueEntity,
-  PinkEntity,
-  PurpleEntity,
-  RedEntity,
-} from './entities';
+import { DarkBlueEntity, LightBlueEntity, PinkEntity } from './entities';
+import { PurpleEntity, RedEntity } from './entities';
 
 function App() {
   return (

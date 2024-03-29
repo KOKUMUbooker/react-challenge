@@ -10,7 +10,11 @@ const bulbIcon = (
   />
 );
 
-export function LightBlueEntity() {
+interface LightBlueEntityProps {
+  styles?: React.CSSProperties;
+}
+
+export function LightBlueEntity({ styles }: LightBlueEntityProps) {
   return (
     <>
       <Box
@@ -19,6 +23,7 @@ export function LightBlueEntity() {
           justifyContent: 'center',
           flexDirection: 'column',
           alignItems: 'center',
+          ...styles,
         }}
       >
         <Box

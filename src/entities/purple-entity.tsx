@@ -10,7 +10,11 @@ const bulbIcon = (
   />
 );
 
-export function PurpleEntity() {
+interface PurpleEntityProps {
+  styles?: React.CSSProperties;
+}
+
+export function PurpleEntity({ styles }: PurpleEntityProps) {
   return (
     <>
       <Box
@@ -19,6 +23,7 @@ export function PurpleEntity() {
           justifyContent: 'center',
           flexDirection: 'column',
           alignItems: 'center',
+          ...styles,
         }}
       >
         <Box
