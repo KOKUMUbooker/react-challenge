@@ -1,4 +1,4 @@
-import { Box, DialogContent, IconButton, Typography } from '@mui/material';
+import { DialogContent, IconButton, Typography } from '@mui/material';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
