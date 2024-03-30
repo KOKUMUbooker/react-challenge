@@ -38,9 +38,9 @@ function App() {
           View original
         </Button>
         <RedEntity styles={{ translate: '49% 0' }} />
-        <PinkEntity styles={{ translate: '24.5%  -12.5%' }} />
+        <PinkEntity styles={{ translate: '24.5%  -12.65%' }} />
         <PurpleEntity />
-        <DarkBlueEntity styles={{ translate: '-24.5% -12.5%' }} />
+        <DarkBlueEntity styles={{ translate: '-24.5% -12.65%' }} />
         <LightBlueEntity styles={{ translate: '-49% 0' }} />
       </Box>
       <ImageDialogue
