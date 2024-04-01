@@ -34,3 +34,5 @@ Here's a snapshot of the website:
 
 - React
 - npm
+- Material UI
+- Typescript
